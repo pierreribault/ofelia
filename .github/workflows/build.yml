@@ -11,7 +11,7 @@ jobs:
 
       - name: Run hadolint on Dockerfile
         if: github.event_name == 'push'
-        run: "docker run --rm -i hadolint/hadolint hadolint --ignore DL3008 - < php-fpm/7.4/Dockerfile"
+        run: "docker run --rm -i hadolint/hadolint hadolint --ignore DL3008 - < Dockerfile"
  
       - name: Build and push
         id: docker_build
