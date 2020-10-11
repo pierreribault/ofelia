@@ -22,4 +22,4 @@ jobs:
           push: true
           registry: docker.pkg.github.com
           repository: pierreribault/ofelia/ofelia
-          tags: pierreribault/ofelia:latest
+          tags: latest
